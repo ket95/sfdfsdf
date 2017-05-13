@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="humg.buiket.facebook.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="551dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/ic_menu_camera" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Tìm kiếm"
+                tools:ignore="HardcodedText,LabelFor" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="38dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.51"
+                android:background="@android:drawable/btn_star_big_on" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="450dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    tools:ignore="UselessParent">
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/ic_launcher_round" />
+
+                    <EditText
+                        android:id="@+id/editText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="Bạn đang nghĩ gì ?"
+                        tools:ignore="HardcodedText,LabelFor" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:drawable/ic_menu_view"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:drawable/ic_menu_myplaces"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:drawable/presence_invisible"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/main_btnSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:drawable/ic_media_pause"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
